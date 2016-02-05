@@ -11,11 +11,14 @@ RUN gem install \
   jekyll:2.5.3 \
   mini_magick \
   kramdown \
-  jekyll-watch \
+  jekyll-watch:1.3.0 \
   pygments.rb \
-  s3_website \
-  jekyll-minifier \
-  jekyll-multiple-languages-plugin
+  s3_website:2.12.2 \
+  jekyll-sitemap:0.9.0 \
+  jekyll-minifier:0.0.4 \
+  jekyll-multiple-languages-plugin \
+  htmlcompressor:0.1.2 \
+  sass:3.4.20
 
 VOLUME /src
 EXPOSE 4000
