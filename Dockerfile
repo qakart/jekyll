@@ -6,7 +6,6 @@ RUN apt-get update \
     node \
     python-pygments \
   && apt-get clean 
-
 RUN gem install bundler
 RUN bundle install
 
