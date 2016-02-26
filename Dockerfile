@@ -18,4 +18,4 @@ WORKDIR /src
 EXPOSE 4000
 
 ENTRYPOINT ["jekyll"]
-CMD ["build"]
+CMD ["serve --drafts"]
