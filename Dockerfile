@@ -10,12 +10,12 @@ RUN apt-get update && apt-get install -y nodejs && \
     gem install jekyll-sitemap -v 0.10.0 && \
     gem install mini_magick && \
     gem install jekyll-minifier -v 0.0.4 && \
-    mkdir /src && mkdir /dest && chmod +w /dest
+    mkdir /src
 
-VOLUME ["/src", "/dest"]
+VOLUME ["/src"]
 WORKDIR /src
 
 EXPOSE 4000
 
 ENTRYPOINT ["jekyll"]
-CMD ["serve", "--drafts"]
+CMD ["serve", "--host 0.0.0.0","--drafts"]
